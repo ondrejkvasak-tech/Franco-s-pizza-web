@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ita-green: #1F6B45;
+  --color-ita-green-light: #2d8256;
+  --color-ita-green-dark: #14492e;
+  --color-ita-red: #B32025;
+  --color-ita-red-light: #cf2c32;
+  --color-cream: #F8F4EC;
+  --color-cream-dark: #eee9dd;
+  --color-charcoal: #1F1F1F;
+  --color-charcoal-light: #2a2a2a;
+  --color-charcoal-dark: #121212;
+  --color-gold: #C9A45C;
+  --color-gold-light: #f7ce7a;
+  --color-gold-dark: #a88443;
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-ita-green);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Root dynamic body styling */
+body {
+  background-color: #F8F4EC;
+  color: #1F1F1F;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Animation utilities for elegant page entrances */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

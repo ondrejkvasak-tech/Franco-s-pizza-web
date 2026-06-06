@@ -1,0 +1,6 @@
+{
+  "name": "Franco's Pizza & Pasta",
+  "description": "Prémiový web pro pizzerii a restauraci Franco's Pizza & Pasta Mělník. Autentická italská pizza a těstoviny v srdci Mělníka.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
